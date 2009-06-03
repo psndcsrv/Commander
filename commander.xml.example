@@ -1,0 +1,10 @@
+<!-- Modifiy this file and copy to ~/.commander.xml -->
+<commanderConfig>
+				<applications>
+								<application name="MySQL" pidFile="/opt/local/var/db/mysql5/dhcp124.concord.org.pid" startCmnd="sudo launchctl load /Library/LaunchDaemons/org.macports.mysql5.plist" stopCmnd="sudo launchctl unload /Library/LaunchDaemons/org.macports.mysql5.plist" />
+								<application name="Jetty" pidFile="/tmp/jetty.pid" startCmnd="/var/jetty/bin/jetty.sh start" stopCmnd="/var/jetty/bin/jetty.sh stop" />
+								<application name="Apache" pidFile="/var/run/httpd.pid" startCmnd="sudo apachectl start" stopCmnd="sudo apachectl stop" />
+								<application name="Nexus" pidFile="/var/nexus/nexus-webapp/bin/jsw/macosx-universal-32/nexus-webapp.pid" startCmnd="/var/nexus/nexus-webapp/bin/jsw/macosx-universal-32/nexus start" stopCmnd="/var/nexus/nexus-webapp/bin/jsw/macosx-universal-32/nexus stop" />
+								<!-- <application name="" pidFile="" startCmnd="" stopCmnd="" /> -->
+				</applications>
+</commanderConfig>
